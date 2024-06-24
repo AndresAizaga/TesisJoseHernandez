@@ -234,7 +234,7 @@ export class ChartsComponent implements OnInit {
             label: "Data",
             fill: true,
             backgroundColor: gradientStroke,
-            borderColor: "#ba54f5",
+            borderColor: "#f4d7d7",
             borderWidth: 2,
             borderDash: [],
             borderDashOffset: 0.0,

@@ -70,16 +70,17 @@ export class FixedPluginComponent implements OnInit {
     }, 1000);
   }
   showSidebarMessage(message) {
-    this.toastr.show(
-      '<span class="now-ui-icons ui-1_bell-53"></span>',
-      message,
-      {
-        timeOut: 4000,
-        closeButton: true,
-        enableHtml: true,
-        toastClass: "alert alert-danger alert-with-icon",
-        positionClass: "toast-top-right"
-      }
-    );
+    // aaizaga
+    // this.toastr.show(
+    //   '<span class="now-ui-icons ui-1_bell-53"></span>',
+    //   message,
+    //   {
+    //     timeOut: 4000,
+    //     closeButton: true,
+    //     enableHtml: true,
+    //     toastClass: "alert alert-danger alert-with-icon",
+    //     positionClass: "toast-top-right"
+    //   }
+    // );
   }
 }

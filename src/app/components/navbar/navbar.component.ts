@@ -67,17 +67,18 @@ export class NavbarComponent implements OnInit, OnDestroy {
     }, 1000);
   }
   showSidebarMessage(message) {
-    this.toastr.show(
-      '<span data-notify="icon" class="tim-icons icon-bell-55"></span>',
-      message,
-      {
-        timeOut: 4000,
-        closeButton: true,
-        enableHtml: true,
-        toastClass: "alert alert-danger alert-with-icon",
-        positionClass: "toast-top-right"
-      }
-    );
+    // aaizaga
+    // this.toastr.show(
+    //   '<span data-notify="icon" class="tim-icons icon-bell-55"></span>',
+    //   message,
+    //   {
+    //     timeOut: 4000,
+    //     closeButton: true,
+    //     enableHtml: true,
+    //     toastClass: "alert alert-danger alert-with-icon",
+    //     positionClass: "toast-top-right"
+    //   }
+    // );
   }
   ngOnInit() {
     window.addEventListener("resize", this.updateColor);
