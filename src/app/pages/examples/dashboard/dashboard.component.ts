@@ -340,7 +340,7 @@ export class DashboardComponent implements OnInit {
       labels: ["JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
       datasets: [
         {
-          label: "Data",
+          label: "Amenazas",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#ec250d",
@@ -378,7 +378,7 @@ export class DashboardComponent implements OnInit {
       labels: ["JUL", "AUG", "SEP", "OCT", "NOV"],
       datasets: [
         {
-          label: "Numero de entidades",
+          label: "Amenazas",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#00d6b4",
@@ -476,10 +476,10 @@ export class DashboardComponent implements OnInit {
         display: false
       },
       data: {
-        labels: ["USA", "GER", "AUS", "UK", "RO", "BR"],
+        labels: ["JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
         datasets: [
           {
-            label: "Countries",
+            label: "Amenazas",
             fill: true,
             backgroundColor: gradientStroke,
             hoverBackgroundColor: gradientStroke,

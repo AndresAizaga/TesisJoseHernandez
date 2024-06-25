@@ -228,7 +228,7 @@ export class ChartsComponent implements OnInit {
       type: "line",
       responsive: true,
       data: {
-        labels: ["JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+        labels: ["CVE-2024-3094", "CVE-2024-3400", "CVE-2024-1709", "CVE-2024-0185", "CVE-2024-0100", "CVE-2024-0054"],
         datasets: [
           {
             label: "Data",
@@ -246,7 +246,7 @@ export class ChartsComponent implements OnInit {
             pointHoverRadius: 4,
             pointHoverBorderWidth: 15,
             pointRadius: 4,
-            data: [80, 100, 70, 80, 120, 80]
+            data: [62, 45, 45, 50, 40, 70]
           }
         ]
       },
@@ -265,7 +265,7 @@ export class ChartsComponent implements OnInit {
       type: "line",
       responsive: true,
       data: {
-        labels: ["JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+        labels: ["Cerberus (ex-Amnesia)", "CoralRaider", "LabHost", "KageNoHitobito", "Mallox", "SideCopy"],
         datasets: [
           {
             label: "Data",
@@ -282,7 +282,7 @@ export class ChartsComponent implements OnInit {
             pointHoverRadius: 4,
             pointHoverBorderWidth: 15,
             pointRadius: 4,
-            data: [80, 100, 70, 80, 120, 80]
+            data: [320, 450, 270, 380, 320, 480]
           }
         ]
       },

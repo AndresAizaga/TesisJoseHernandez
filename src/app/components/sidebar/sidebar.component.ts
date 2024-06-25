@@ -309,7 +309,7 @@ export const ROUTES: RouteInfo[] = [
   // },
   {
     path: "/widgets",
-    title: "Casos",
+    title: "Reportes",
     type: "link",
     rtlTitle: "الحاجيات",
     icontype: "tim-icons icon-settings"
@@ -321,13 +321,13 @@ export const ROUTES: RouteInfo[] = [
     rtlTitle: "الرسوم البيانية",
     icontype: "tim-icons icon-chart-bar-32"
   },
-  {
-    path: "/calendar",
-    title: "Alertas",
-    rtlTitle: "التقويم",
-    type: "link",
-    icontype: "tim-icons icon-time-alarm"
-  }
+  // {
+  //   path: "/calendar",
+  //   title: "Alertas",
+  //   rtlTitle: "التقويم",
+  //   type: "link",
+  //   icontype: "tim-icons icon-time-alarm"
+  // }
 ];
 
 @Component({
