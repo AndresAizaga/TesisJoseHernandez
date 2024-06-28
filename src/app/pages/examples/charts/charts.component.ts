@@ -300,7 +300,7 @@ export class ChartsComponent implements OnInit {
       type: "bar",
       responsive: true,
       data: {
-        labels: ["JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+        labels: ["RedLine Stealer", "purecrypter", "Tsunami IRC", "DillJuice", "Darkmoon", "8base"],
         datasets: [
           {
             label: "Data",
@@ -325,10 +325,10 @@ export class ChartsComponent implements OnInit {
       type: "bar",
       responsive: true,
       data: {
-        labels: ["JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+        labels: ["ransomware", "DarkGate", "rat", "infostealer", "trojan", "PikaBot"],
         datasets: [
           {
-            label: "Data",
+            label: "Recibidos",
             fill: true,
             backgroundColor: "#ff8a76",
             hoverBackgroundColor: " #ff8a76",
@@ -339,7 +339,7 @@ export class ChartsComponent implements OnInit {
             data: [80, 100, 70, 80, 120, 80]
           },
           {
-            label: "Data",
+            label: "Solventados",
             fill: true,
             backgroundColor: "#2782f0",
             hoverBackgroundColor: " #2782f0",
@@ -347,7 +347,7 @@ export class ChartsComponent implements OnInit {
             borderWidth: 2,
             borderDash: [],
             borderDashOffset: 0.0,
-            data: [60, 110, 90, 70, 90, 100]
+            data: [60, 100, 40, 59, 100, 60]
           }
         ]
       },
