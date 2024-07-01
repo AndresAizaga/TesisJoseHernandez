@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "tesisjosehernandez"
-  }
+    "default": "tesisjosehernandez",
+    "tesis": "tesisjosehernandez"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
