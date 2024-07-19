@@ -4,6 +4,7 @@ import { RegisterComponent } from "./register/register.component";
 import { PricingComponent } from "./pricing/pricing.component";
 import { LockComponent } from "./lock/lock.component";
 import { LoginComponent } from "./login/login.component";
+import { UserComponent } from "./user/user.component";
 
 export const PagesRoutes: Routes = [
   {
@@ -24,6 +25,10 @@ export const PagesRoutes: Routes = [
       {
         path: "pricing",
         component: PricingComponent
+      },
+      {
+        path: "user",
+        component: UserComponent
       }
     ]
   }

@@ -191,16 +191,17 @@
           </div>
         </div>
       </div>
-      
 
       <div>
-        <button class="btn-primary"  (click)="generateReport()">Generar Reporte</button>
-        <br/><br/>
+        <a class="btn btn-fill btn-danger" href="#/pages/user">
+          Generar Reporte
+        </a>
+        <br /><br />
       </div>
 
       <div *ngIf="isLoading" class="loading-panel">
         <div class="loading-content">
-          <img src="assets/img/loading.gif" alt="Loading...">
+          <img src="assets/img/loading.gif" alt="Loading..." />
         </div>
       </div>
 
@@ -301,5 +302,3 @@
     </div>
   </div>
 </div>
-
-

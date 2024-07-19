@@ -9,10 +9,12 @@ export class WidgetsComponent implements OnInit {
   switch = true;
   showIframe = false;
   isLoading = false;
+  today: Date = new Date();
   constructor() {}
 
   ngOnInit() {}
 
+ 
   generateReport() {
     this.isLoading = true;
     setTimeout(() => {
