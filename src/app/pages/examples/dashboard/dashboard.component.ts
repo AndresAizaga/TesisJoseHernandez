@@ -338,7 +338,7 @@ export class DashboardComponent implements OnInit {
     gradientStroke.addColorStop(0, "rgba(233,32,16,0)"); //red colors
 
     var data = {
-      labels: ["JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+      labels: ["FEB", "MAR", "ABR", "MAY", "JUN", "JUL"],
       datasets: [
         {
           label: "Amenazas",
@@ -376,7 +376,7 @@ export class DashboardComponent implements OnInit {
     gradientStroke.addColorStop(0, "rgba(66,134,121,0)"); //green colors
 
     var data = {
-      labels: ["JUL", "AUG", "SEP", "OCT", "NOV"],
+      labels: ["MAR", "ABR", "MAY", "JUN", "JUL"],
       datasets: [
         {
           label: "Amenazas",
@@ -405,18 +405,19 @@ export class DashboardComponent implements OnInit {
     });
 
     var chart_labels = [
-      "JAN",
-      "FEB",
-      "MAR",
-      "APR",
-      "MAY",
-      "JUN",
-      "JUL",
-      "AUG",
+      "AGO",
       "SEP",
       "OCT",
       "NOV",
-      "DEC"
+      "DIC",
+      "ENE",
+      "FEB",
+      "MAR",
+      "ABR",
+      "MAY",
+      "JUN",
+      "JUL",
+      
     ];
     this.datasets = [
       [100, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100],
@@ -477,7 +478,7 @@ export class DashboardComponent implements OnInit {
         display: false
       },
       data: {
-        labels: ["JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+        labels: ["FEB", "MAR", "ABR", "MAY", "JUN", "JUL"],
         datasets: [
           {
             label: "Amenazas",
@@ -500,7 +501,7 @@ export class DashboardComponent implements OnInit {
     this.authService.logout();
     location.reload(); // to refresh the page and navigate to the login page
   }
-  
+
   public updateOptions() {
     this.myChartData.data.datasets[0].data = this.data;
     this.myChartData.update();
