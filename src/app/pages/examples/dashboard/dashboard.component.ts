@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import Chart from "chart.js";
+import { AuthService } from "src/app/auth.service";
 
 @Component({
   selector: "app-dashboard",
@@ -14,7 +15,7 @@ export class DashboardComponent implements OnInit {
   public clicked: boolean = true;
   public clicked1: boolean = false;
   public clicked2: boolean = false;
-  constructor() {}
+  constructor(private authService: AuthService) {}
 
   ngOnInit() {
     var gradientChartOptionsConfigurationWithTooltipBlue: any = {
@@ -494,6 +495,12 @@ export class DashboardComponent implements OnInit {
       options: gradientBarChartConfiguration
     });
   }
+
+  logout(): void {
+    this.authService.logout();
+    location.reload(); // to refresh the page and navigate to the login page
+  }
+  
   public updateOptions() {
     this.myChartData.data.datasets[0].data = this.data;
     this.myChartData.update();
