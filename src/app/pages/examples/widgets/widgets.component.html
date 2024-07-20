@@ -193,9 +193,15 @@
       </div>
 
       <div>
-        <a class="btn btn-fill btn-danger" href="#/pages/user">
+        <!-- <a class="btn btn-fill btn-danger" href="#/pages/user">
           Generar Reporte
-        </a>
+        </a> -->
+        <div class="chart-area">
+          <canvas #chartCanvas></canvas>
+        </div>
+        <button class="btn btn-fill btn-danger" (click)="generateReport()">
+          imagen
+        </button>
         <br /><br />
       </div>
 
