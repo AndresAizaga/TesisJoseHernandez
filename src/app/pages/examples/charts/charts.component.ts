@@ -27,9 +27,11 @@ interface Vulnerabilidades {
 
 @Component({
   selector: "app-charts",
-  templateUrl: "charts.component.html"
+  templateUrl: "charts.component.html",
+  styleUrls:["charts.component.scss"] 
 })
 export class ChartsComponent implements OnInit {
+  isLoading:boolean=false;
   public canvas: any;
   public ctx;
   amenazas: Amenazas[] = [];
@@ -51,6 +53,7 @@ export class ChartsComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    this.isLoading = true;
 
     this.amenazasService.getThreats().subscribe(data => {
       this.amenazas = data;
@@ -432,5 +435,7 @@ export class ChartsComponent implements OnInit {
         options: gradientBarChartConfigurationWithGrid
       });
    });
+
+   this.isLoading = false;
   }
 }
