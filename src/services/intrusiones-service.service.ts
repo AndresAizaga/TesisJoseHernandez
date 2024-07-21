@@ -4,6 +4,11 @@ import { Observable } from 'rxjs';
 
 interface ThreatIntrusiones {
   intrusion: string;
+  descripcion: string;
+  nivel_gravedad: string;
+  vectores_ataque: string;
+  componentes: string;
+  mitigacion: string;
   cantidad: number;
 }
 
@@ -18,4 +23,5 @@ export class IntrusionesService {
   getThreats(): Observable<ThreatIntrusiones[]> {
     return this.http.get<ThreatIntrusiones[]>(this.apiUrl);
   }
+
 }

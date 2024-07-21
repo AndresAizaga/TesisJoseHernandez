@@ -7,6 +7,16 @@ interface ThreatVulnerabilidad {
   cantidad: number;
 }
 
+interface ThreatVulnerabilidadComplete {
+  vulnerabilidad: string;
+  descripcion: string;
+  nivel_gravedad: string;
+  vectores_ataque: string;
+  componentes: string;
+  mitigacion: string;
+  cantidad: number;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -18,5 +28,9 @@ export class VulnerabilidadesService {
 
   getThreats(): Observable<ThreatVulnerabilidad[]> {
     return this.http.get<ThreatVulnerabilidad[]>(this.apiUrl);
+  }
+
+  getThreatsByCant(cant: number ): Observable<ThreatVulnerabilidadComplete[]> {
+    return this.http.get<ThreatVulnerabilidadComplete[]>(this.apiUrl + '/' + cant);
   }
 }

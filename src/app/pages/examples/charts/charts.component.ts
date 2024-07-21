@@ -31,7 +31,7 @@ interface Vulnerabilidades {
   styleUrls:["charts.component.scss"] 
 })
 export class ChartsComponent implements OnInit {
-  isLoading:boolean=false;
+  isLoading:boolean=true;
   public canvas: any;
   public ctx;
   amenazas: Amenazas[] = [];

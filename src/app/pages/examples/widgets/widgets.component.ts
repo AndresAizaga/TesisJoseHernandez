@@ -68,37 +68,7 @@ export class WidgetsComponent implements AfterViewInit  {
     });
   }
 
-  generateReport() {
-    this.isLoading = true;
-    setTimeout(() => {
-      this.isLoading = false;
-      this.showIframe = true;
-    }, 3000);
 
-    const canvas = this.chartRef.nativeElement;
-    const chartImage = canvas.toDataURL('image/png');
-
-    const documentDefinition = {
-      content: [
-        { text: 'Dynamic PDF with pdfMake', style: 'header' },
-        { text: 'This is an example of a dynamically generated PDF using pdfMake and Angular.' },
-        { text: 'You can add tables, images, and more to your PDF.' },
-        {
-          image: chartImage,
-          width: 500
-        }
-      ],
-      styles: {
-        header: {
-          fontSize: 18,
-          bold: true,
-          margin: [0, 0, 0, 10]
-        }
-      }
-    };
-
-    pdfMake.createPdf(documentDefinition).open();
-  }
 }
 
 
