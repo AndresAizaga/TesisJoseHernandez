@@ -1,9 +1,11 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from "@angular/core";
-import * as pdfMake from 'pdfmake/build/pdfMake';
+import * as pdfMake from 'pdfmake/build/pdfmake';
 import * as pdfFonts from 'pdfmake/build/vfs_fonts';
+
 import Chart from "chart.js";
 
-(pdfMake as any).vfs = pdfFonts.pdfMake.vfs;
+//(pdfMake as any).vfs = pdfFonts.pdfMake.vfs;
+pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 @Component({
   selector: "app-widgets",
