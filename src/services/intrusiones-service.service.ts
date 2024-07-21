@@ -11,7 +11,7 @@ interface ThreatIntrusiones {
   providedIn: 'root'
 })
 export class IntrusionesService {
-  private apiUrl = 'http://localhost:5183/PlataformaAmenazas/IntrusionesIdentificadas';
+  private apiUrl = 'https://plataformaamenazasapi20240720234428.azurewebsites.net/PlataformaAmenazas/IntrusionesIdentificadas';
 
   constructor(private http: HttpClient) { }
 

@@ -12,7 +12,7 @@ interface ThreatVulnerabilidad {
 })
 
 export class VulnerabilidadesService {
-  private apiUrl = 'http://localhost:5183/PlataformaAmenazas/VulnerabilidadesMasActivas';
+  private apiUrl = 'https://plataformaamenazasapi20240720234428.azurewebsites.net/PlataformaAmenazas/VulnerabilidadesMasActivas';
 
   constructor(private http: HttpClient) { }
 

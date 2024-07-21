@@ -11,7 +11,7 @@ interface ThreatAtaques {
   providedIn: 'root'
 })
 export class AtaquesService {
-  private apiUrl = 'http://localhost:5183/PlataformaAmenazas/AtaquesRecibidos';
+  private apiUrl = 'https://plataformaamenazasapi20240720234428.azurewebsites.net/PlataformaAmenazas/AtaquesRecibidos';
 
   constructor(private http: HttpClient) { }
 
